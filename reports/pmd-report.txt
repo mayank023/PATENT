@@ -1,0 +1,218 @@
+
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:16	Avoid unused imports such as 'java.net.UnknownHostException'
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:16	Avoid unused imports such as 'java.net.UnknownHostException'
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:17	Avoid unused imports such as 'com.google.gson.Gson'
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:17	Avoid unused imports such as 'com.google.gson.Gson'
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:25	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:25	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:29	Local variable 'data' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:30	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:37	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:37	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:40	Local variable 'out' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:42	Found 'DD'-anomaly for variable 'result' (lines '42'-'46').
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:42	Found 'DD'-anomaly for variable 'result' (lines '42'-'49').
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:42	Found 'DD'-anomaly for variable 'result' (lines '42'-'52').
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:42	Found 'DU'-anomaly for variable 'result' (lines '42'-'57').
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:43	Local variable '_operation' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:44	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:45	Position literals first in String comparisons
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:48	Position literals first in String comparisons
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:51	Position literals first in String comparisons
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:65	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:67	Local variable 'mongoDAO' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:68	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:70	Local variable 'data' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:71	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:92	Avoid variables with short names like id
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:93	The String literal "patientId" appears 4 times in this file; the first occurrence is on line 93
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:94	Avoid excessively long variable names like collectionNameForTrialAndSite
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:122	Avoid variables with short names like id
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:124	Avoid excessively long variable names like collectionNameForTrialAndSite
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:130	Avoid excessively long variable names like patientCollectionName
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:160	Avoid excessively long variable names like colNameForTrialAndSite
+src/main/java/com/rl/clinicalcloud/servlets/AjaxServlet.java:173	Consider simply returning the value vs storing it in local variable 'colNameForPatient'
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:23	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:23	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:26	Local variable 'out' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:27	Local variable 'session' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:29	Local variable 'mongoDAO' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:32	Local variable 'repository' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:34	Local variable 'trialId' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:52	Parameter 'result' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:54	Found 'DU'-anomaly for variable 'commaFlag' (lines '54'-'64').
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:56	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:57	Found 'DU'-anomaly for variable 'commaFlag' (lines '57'-'64').
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:59	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:61	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:66	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:66	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:69	Avoid unused local variables such as 'mongoDAO'.
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:69	Found 'DU'-anomaly for variable 'mongoDAO' (lines '69'-'81').
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:77	Avoid unused local variables such as 'gson'.
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:77	Found 'DU'-anomaly for variable 'gson' (lines '77'-'81').
+src/main/java/com/rl/clinicalcloud/servlets/PatientListServlet.java:90	Consider simply returning the value vs storing it in local variable 'colNameForPatient'
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:23	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:23	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:26	Local variable 'out' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:27	Local variable 'session' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:29	Local variable 'mongoDAO' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:32	Local variable 'repository' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:34	Avoid unused local variables such as 'trialId'.
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:34	Found 'DU'-anomaly for variable 'trialId' (lines '34'-'48').
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:34	Local variable 'trialId' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:35	Avoid unused local variables such as 'siteId'.
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:35	Found 'DU'-anomaly for variable 'siteId' (lines '35'-'48').
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:44	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:50	Parameter 'result' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:52	Found 'DU'-anomaly for variable 'commaFlag' (lines '52'-'62').
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:54	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:55	Found 'DU'-anomaly for variable 'commaFlag' (lines '55'-'62').
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:57	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:59	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:64	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:64	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:67	Avoid unused local variables such as 'mongoDAO'.
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:67	Found 'DU'-anomaly for variable 'mongoDAO' (lines '67'-'79').
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:75	Avoid unused local variables such as 'gson'.
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:75	Found 'DU'-anomaly for variable 'gson' (lines '75'-'79').
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:86	Avoid excessively long variable names like collectionNameForTrialVisit
+src/main/java/com/rl/clinicalcloud/servlets/TrialVisitServlet.java:87	Consider simply returning the value vs storing it in local variable 'collectionNameForTrialVisit'
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:23	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:23	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:24	Document empty method
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:28	Parameter 'result' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:30	Found 'DU'-anomaly for variable 'commaFlag' (lines '30'-'40').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:32	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:33	Found 'DU'-anomaly for variable 'commaFlag' (lines '33'-'40').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:35	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:37	System.out.print is used
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:42	Parameter 'req' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:42	Parameter 'res' is not assigned and could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:46	Avoid unused local variables such as 'out'.
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:46	Found 'DU'-anomaly for variable 'out' (lines '46'-'60').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:46	Local variable 'out' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:47	Found 'DU'-anomaly for variable 'session' (lines '47'-'60').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:47	Local variable 'session' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:49	Local variable 'operation' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:51	Position literals first in String comparisons
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:51	Position literals first in String comparisons
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:53	Position literals first in String comparisons
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:64	Local variable 'mongoDAO' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:65	Local variable 'visitId' could be declared final
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:65	The String literal "visitId" appears 4 times in this file; the first occurrence is on line 65
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:88	Avoid unused local variables such as 'trialId'.
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:88	Found 'DU'-anomaly for variable 'trialId' (lines '88'-'110').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:89	Avoid unused local variables such as 'siteId'.
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:89	Found 'DU'-anomaly for variable 'siteId' (lines '89'-'110').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:94	Found 'DU'-anomaly for variable 'jsonData' (lines '94'-'110').
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:117	Avoid excessively long variable names like collectionNameForTrialVisit
+src/main/java/com/rl/clinicalcloud/servlets/VisitInfoServlet.java:118	Consider simply returning the value vs storing it in local variable 'collectionNameForTrialVisit'
+src/main/java/com/rl/common/ServiceContext.java:6	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/rl/common/ServiceContext.java:7	Avoid excessively long variable names like applicationContext
+src/main/java/com/rl/common/ServiceContext.java:14	Parameter 'beanName' is not assigned and could be declared final
+src/main/java/com/rl/domain/FamilyHistoryOfCancer.java:3	Each class should declare at least one constructor
+src/main/java/com/rl/domain/PatientVisitDetails.java:6	Each class should declare at least one constructor
+src/main/java/com/rl/domain/PatientVisitDetails.java:9	Avoid excessively long variable names like personalInformation
+src/main/java/com/rl/domain/PatientVisitDetails.java:11	Avoid excessively long variable names like familyHistoryOfCancerList
+src/main/java/com/rl/domain/PersonalInformation.java:3	Each class should declare at least one constructor
+src/main/java/com/rl/mongodb/IMongoDAO.java:13	Avoid modifiers which are implied by the context
+src/main/java/com/rl/mongodb/IMongoDAO.java:14	Avoid modifiers which are implied by the context
+src/main/java/com/rl/mongodb/IMongoDAO.java:15	Avoid modifiers which are implied by the context
+src/main/java/com/rl/mongodb/IMongoDAO.java:16	Avoid modifiers which are implied by the context
+src/main/java/com/rl/mongodb/IMongoDAO.java:16	Avoid using implementation types like 'HashMap'; use the interface instead
+src/main/java/com/rl/mongodb/IMongoDAO.java:16	Avoid using implementation types like 'HashMap'; use the interface instead
+src/main/java/com/rl/mongodb/IMongoDAO.java:17	Avoid modifiers which are implied by the context
+src/main/java/com/rl/mongodb/IMongoDAO.java:17	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/IMongoDAO.java:18	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/IMongoDAO.java:20	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/IMongoDAO.java:21	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/MongoDAO.java:33	Found 'DD'-anomaly for variable 'mongo' (lines '33'-'35').
+src/main/java/com/rl/mongodb/MongoDAO.java:38	System.out.print is used
+src/main/java/com/rl/mongodb/MongoDAO.java:39	Avoid printStackTrace(); use a logger call instead.
+src/main/java/com/rl/mongodb/MongoDAO.java:49	Parameter 'dbName' is not assigned and could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:49	Parameter 'mongoConnection' is not assigned and could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:50	Avoid variables with short names like db
+src/main/java/com/rl/mongodb/MongoDAO.java:50	Found 'DD'-anomaly for variable 'db' (lines '50'-'52').
+src/main/java/com/rl/mongodb/MongoDAO.java:54	System.out.print is used
+src/main/java/com/rl/mongodb/MongoDAO.java:55	Avoid printStackTrace(); use a logger call instead.
+src/main/java/com/rl/mongodb/MongoDAO.java:65	Parameter 'collectionName' is not assigned and could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:65	Parameter 'mongoDB' is not assigned and could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:66	Found 'DD'-anomaly for variable 'collection' (lines '66'-'70').
+src/main/java/com/rl/mongodb/MongoDAO.java:72	System.out.print is used
+src/main/java/com/rl/mongodb/MongoDAO.java:73	Avoid printStackTrace(); use a logger call instead.
+src/main/java/com/rl/mongodb/MongoDAO.java:82	Avoid using implementation types like 'HashMap'; use the interface instead
+src/main/java/com/rl/mongodb/MongoDAO.java:82	Avoid using implementation types like 'HashMap'; use the interface instead
+src/main/java/com/rl/mongodb/MongoDAO.java:82	Parameter 'collectionName' is not assigned and could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:84	Found 'DD'-anomaly for variable 'cursor' (lines '84'-'106').
+src/main/java/com/rl/mongodb/MongoDAO.java:85	Found 'DD'-anomaly for variable 'allVisits' (lines '85'-'108').
+src/main/java/com/rl/mongodb/MongoDAO.java:86	Found 'DD'-anomaly for variable 'mongoConn' (lines '86'-'93').
+src/main/java/com/rl/mongodb/MongoDAO.java:87	Found 'DD'-anomaly for variable 'mongoDB' (lines '87'-'96').
+src/main/java/com/rl/mongodb/MongoDAO.java:90	Local variable 'startTime' could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:99	Local variable 'collection' could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:101	Local variable 'searchById' could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:108	Found 'DD'-anomaly for variable 'allVisits' (lines '108'-'112').
+src/main/java/com/rl/mongodb/MongoDAO.java:110	Found 'DU'-anomaly for variable 'recordCount' (lines '110'-'126').
+src/main/java/com/rl/mongodb/MongoDAO.java:112	Found 'DD'-anomaly for variable 'allVisits' (lines '112'-'112').
+src/main/java/com/rl/mongodb/MongoDAO.java:117	Local variable 'endTime' could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:119	System.out.print is used
+src/main/java/com/rl/mongodb/MongoDAO.java:133	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/MongoDAO.java:134	Found 'DD'-anomaly for variable 'mongoConn' (lines '134'-'138').
+src/main/java/com/rl/mongodb/MongoDAO.java:135	Found 'DD'-anomaly for variable 'mongoDB' (lines '135'-'141').
+src/main/java/com/rl/mongodb/MongoDAO.java:144	Local variable 'collection' could be declared final
+src/main/java/com/rl/mongodb/MongoDAO.java:147	System.out.print is used
+src/main/java/com/rl/mongodb/MongoDAO.java:149	Avoid excessively long variable names like modifiedFieldsObject
+src/main/java/com/rl/mongodb/MongoDAO.java:155	Avoid printStackTrace(); use a logger call instead.
+src/main/java/com/rl/mongodb/MongoDAO.java:166	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/MongoDAO.java:172	Avoid if (x != y) ..; else ..;
+src/main/java/com/rl/mongodb/MongoDAO.java:181	Avoid printStackTrace(); use a logger call instead.
+src/main/java/com/rl/mongodb/MongoDAO.java:191	Avoid unused local variables such as 'result'.
+src/main/java/com/rl/mongodb/MongoDAO.java:191	Found 'DU'-anomaly for variable 'result' (lines '191'-'218').
+src/main/java/com/rl/mongodb/MongoDAO.java:192	Avoid excessively long variable names like patientVisitCollection
+src/main/java/com/rl/mongodb/MongoDAO.java:192	Found 'DD'-anomaly for variable 'patientVisitCollection' (lines '192'-'204').
+src/main/java/com/rl/mongodb/MongoDAO.java:193	Found 'DD'-anomaly for variable 'mongoConn' (lines '193'-'198').
+src/main/java/com/rl/mongodb/MongoDAO.java:194	Found 'DD'-anomaly for variable 'mongoDB' (lines '194'-'201').
+src/main/java/com/rl/mongodb/MongoDAO.java:224	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/MongoDAO.java:225	Found 'DD'-anomaly for variable 'mongoConn' (lines '225'-'232').
+src/main/java/com/rl/mongodb/MongoDAO.java:226	Found 'DD'-anomaly for variable 'mongoDB' (lines '226'-'235').
+src/main/java/com/rl/mongodb/MongoDAO.java:227	Found 'DD'-anomaly for variable 'resultObject' (lines '227'-'251').
+src/main/java/com/rl/mongodb/MongoDAO.java:271	Avoid variables with short names like id
+src/main/java/com/rl/mongodb/MongoDAO.java:272	Found 'DD'-anomaly for variable 'jsonString' (lines '272'-'278').
+src/main/java/com/rl/mongodb/SampleDAO.java:3	Avoid unused imports such as 'java.net.UnknownHostException'
+src/main/java/com/rl/mongodb/SampleDAO.java:3	Avoid unused imports such as 'java.net.UnknownHostException'
+src/main/java/com/rl/mongodb/SampleDAO.java:17	Avoid variables with short names like db
+src/main/java/com/rl/mongodb/SampleDAO.java:17	Local variable 'db' could be declared final
+src/main/java/com/rl/mongodb/SampleDAO.java:20	Local variable 'collection' could be declared final
+src/main/java/com/rl/mongodb/SampleDAO.java:23	System.out.print is used
+src/main/java/com/rl/mongodb/SampleDAO.java:24	Local variable 'document' could be declared final
+src/main/java/com/rl/mongodb/SampleDAO.java:28	Local variable 'documentDetail' could be declared final
+src/main/java/com/rl/mongodb/SampleDAO.java:39	Avoid printStackTrace(); use a logger call instead.
+src/main/java/com/rl/mongodb/SampleDAO.java:43	Parameter 'args' is not assigned and could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:28	Parameter 'testName' is not assigned and could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:32	JUnit 4 tests that execute tests should use the @Test annotation
+src/test/java/com/rl/mongodb/MongoDAOTest.java:32	JUnit tests should include assert() or fail()
+src/test/java/com/rl/mongodb/MongoDAOTest.java:33	Local variable 'mongoDAO' could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:33	The String literal "mongoDAO" appears 5 times in this file; the first occurrence is on line 33
+src/test/java/com/rl/mongodb/MongoDAOTest.java:34	System.out.print is used
+src/test/java/com/rl/mongodb/MongoDAOTest.java:34	The String literal "Mongo DAO instance using Spring " appears 5 times in this file; the first occurrence is on line 34
+src/test/java/com/rl/mongodb/MongoDAOTest.java:38	Local variable 'details' could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:44	JUnit 4 tests that execute tests should use the @Test annotation
+src/test/java/com/rl/mongodb/MongoDAOTest.java:44	JUnit tests should include assert() or fail()
+src/test/java/com/rl/mongodb/MongoDAOTest.java:45	Local variable 'mongoDAO' could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:46	System.out.print is used
+src/test/java/com/rl/mongodb/MongoDAOTest.java:48	Local variable 'criteria' could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:54	Local variable 'allVisits' could be declared final
+src/test/java/com/rl/mongodb/MongoDAOTest.java:57	System.out.print is used
+src/test/java/com/rl/mongodb/MongoDAOTest.java:59	System.out.print is used
+src/test/java/com/rl/mongodb/MongoDAOTest.java:63	JUnit 4 tests that execute tests should use the @Test annotation
+src/test/java/com/rl/mongodb/MongoDAOTest.java:63	JUnit tests should include assert() or fail()
+src/test/java/com/rl/mongodb/MongoDAOTest.java:65	System.out.print is used
+src/test/java/com/rl/mongodb/MongoDAOTest.java:77	JUnit 4 tests that execute tests should use the @Test annotation
+src/test/java/com/rl/mongodb/MongoDAOTest.java:77	JUnit tests should include assert() or fail()
+src/test/java/com/rl/mongodb/MongoDAOTest.java:90	JUnit 4 tests that execute tests should use the @Test annotation
+src/test/java/com/rl/mongodb/MongoDAOTest.java:90	JUnit tests should include assert() or fail()
+src/test/java/com/rl/mongodb/MongoDAOTest.java:108	Found 'DU'-anomaly for variable 'patientVisitDAO' (lines '108'-'115').
+src/test/java/com/rl/mongodb/MongoDAOTest.java:109	Found 'DU'-anomaly for variable 'testJSONData' (lines '109'-'115').
+src/test/java/com/rl/mongodb/MongoDAOTest.java:112	Avoid instantiating new objects inside loops
+src/test/java/com/rl/mongodb/MongoDAOTest.java:166	Avoid excessively long variable names like patientVisitDetails
+src/test/java/com/rl/mongodb/MongoDAOTest.java:166	Parameter 'patientVisitDetails' is not assigned and could be declared final

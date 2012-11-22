@@ -1,0 +1,7 @@
+mvn clean install sonar:sonar -Dmaven.test.failure.ignore=true
+
+mvn pmd:pmd
+
+mvn pmd:cpd
+
+

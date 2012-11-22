@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="944" started-at="2012-11-22T06:46:17Z" finished-at="2012-11-22T06:46:18Z">
+    <groups>
+      <group name="checkinTests">
+        <method signature="MongoDAOTestNG.atestFindByPrimaryKey()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestFindByPrimaryKey" class="com.rl.mongodb.MongoDAOTestNG"/>
+        <method signature="MongoDAOTestNG.atestInsertDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestInsertDocument" class="com.rl.mongodb.MongoDAOTestNG"/>
+        <method signature="MongoDAOTestNG.atestModifyDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestModifyDocument" class="com.rl.mongodb.MongoDAOTestNG"/>
+        <method signature="MongoDAOTestNG.atestSaveOrUpdateDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestSaveOrUpdateDocument" class="com.rl.mongodb.MongoDAOTestNG"/>
+      </group> <!-- checkinTests -->
+      <group name="functionalTests">
+        <method signature="MongoDAOTestNG.atestGetAllDocuments()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestGetAllDocuments" class="com.rl.mongodb.MongoDAOTestNG"/>
+        <method signature="MongoDAOTestNG.atestInsertDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestInsertDocument" class="com.rl.mongodb.MongoDAOTestNG"/>
+        <method signature="MongoDAOTestNG.atestModifyDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestModifyDocument" class="com.rl.mongodb.MongoDAOTestNG"/>
+        <method signature="MongoDAOTestNG.atestSaveOrUpdateDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestSaveOrUpdateDocument" class="com.rl.mongodb.MongoDAOTestNG"/>
+      </group> <!-- functionalTests -->
+    </groups>
+    <test name="Test" duration-ms="944" started-at="2012-11-22T06:46:17Z" finished-at="2012-11-22T06:46:18Z">
+      <class name="com.rl.mongodb.MongoDAOTestNG">
+        <test-method status="PASS" signature="atestFindByPrimaryKey()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestFindByPrimaryKey" duration-ms="799" started-at="2012-11-22T12:16:17Z" finished-at="2012-11-22T12:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atestFindByPrimaryKey -->
+        <test-method status="PASS" signature="atestGetAllDocuments()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestGetAllDocuments" duration-ms="39" started-at="2012-11-22T12:16:18Z" finished-at="2012-11-22T12:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atestGetAllDocuments -->
+        <test-method status="PASS" signature="atestInsertDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestInsertDocument" duration-ms="72" started-at="2012-11-22T12:16:18Z" finished-at="2012-11-22T12:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atestInsertDocument -->
+        <test-method status="PASS" signature="atestModifyDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestModifyDocument" duration-ms="7" started-at="2012-11-22T12:16:18Z" finished-at="2012-11-22T12:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atestModifyDocument -->
+        <test-method status="PASS" signature="atestSaveOrUpdateDocument()[pri:0, instance:com.rl.mongodb.MongoDAOTestNG@162cc04e]" name="atestSaveOrUpdateDocument" duration-ms="10" started-at="2012-11-22T12:16:18Z" finished-at="2012-11-22T12:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atestSaveOrUpdateDocument -->
+      </class> <!-- com.rl.mongodb.MongoDAOTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

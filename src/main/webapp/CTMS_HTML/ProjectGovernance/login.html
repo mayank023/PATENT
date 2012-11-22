@@ -1,0 +1,86 @@
+	 
+	  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Relevance Lab: Clinical Cloud</title>
+<link href="css/clinicalcloud-style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var cont_left = $("#container").position().left;
+        $("a img").hover(function() {
+            // hover in
+            $(this).parent().parent().css("z-index", 1);
+            $(this).animate({
+               height: "305",
+               width: "145",
+            }, "fast");
+        }, function() {
+            // hover out
+            $(this).parent().parent().css("z-index", 0);
+            $(this).animate({
+                height: "273",
+                width: "130",
+            }, "fast");
+        });
+        
+    });
+    </script>
+
+<script language="javascript" type="text/javascript">
+function createlightbox()
+    {
+        document.getElementById('light').style.display='block';
+        document.getElementById('fade').style.display='block'
+    }
+    function closelightbox()
+    {
+        document.getElementById('light').style.display='none';
+        document.getElementById('fade').style.display='none'
+    }
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+    <style type="text/css">
+    
+    
+    </style>
+</head>
+<body>
+<div id="container">
+ 		 <div class="img" id="product4"><a href = "javascript:void(0)" ><img src="images/Clinicalcloud-data-repository.png" width="130" height="273" border="0px" onclick="MM_popupMsg('Launching !  Watch this space.')" /></a></div>
+  <div class="img end" id="product5"><a href = "javascript:void(0)" onclick = "createlightbox()"><img src="images/Clinicalcloud-Portal.png" width="130" height="273" border="0px" /></a></div>
+        <div class="img" id="product1"><a href = "#", ><img src="images/Clinicalcloud-network.png" width="130" height="273" border="0px" onclick="MM_popupMsg('Launching !  Watch this space.')" /></a></div>
+  <div class="img" id="product2"><a href = "#" ><img src="images/Clinicalcloud-doc-query-mgmt.png" width="130" height="273" border="0px" onclick="MM_popupMsg('Launching !  Watch this space.')"/></a></div>
+  <div class="img" id="product6"><a href = "#"><img src="images/Clinicalcloud-sitetrial.png" width="130" height="273" border="0px" onclick="MM_popupMsg('Launching !  Watch this space.')"/></a></div>
+  <div class="img" id="product3"><a href = "javascript:void(0)"><img src="images/Clinicalcloud-trial-platform.png" width="130" height="273" border="0px" onclick="MM_popupMsg('Launching !  Watch this space.')"/></a></div>
+  
+</div>
+
+<div id="light" class="white_content"> 
+
+ <div id="login-box">
+<a href = "javascript:void(0)" onclick = "closelightbox()"><div id="close-btn"></div></a>
+<H2>Login</H2>
+<br />
+<br />
+
+<form name="login"  action="" method="post">
+
+<div id="login-box-name" style="margin-top:20px;">User Name:</div><div id="login-box-field" style="margin-top:20px;"><input name="username" class="form-login"  value="" size="30" maxlength="2048" /></div>
+<div id="login-box-name">Password:</div><div id="login-box-field"><input name="password" type="password" class="form-login"  value="" size="30" maxlength="2048" /></div>
+<br />
+<span class="login-box-options"><input type="checkbox" name="1" value="1"> Remember Me <a href="#" style="margin-left:30px;">Forgot password?</a></span>
+<br />
+<br />
+
+<input type="submit" name="submit" id="login-btn"  value=""/>
+</div>
+</div>   
+</form>
+<div id="fade" class="black_overlay"></div>
+</body>
+</html>

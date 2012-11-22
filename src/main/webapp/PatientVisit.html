@@ -1,0 +1,170 @@
+<html>
+<head>
+	<script src="jquery-latest.min.js"></script>
+	<script src="jquery.loadJSON.js"></script>
+	
+</head>
+<style type="text/css">
+form {
+    line-height: 2em;
+}
+p {
+    margin: 5px 0;
+}
+h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold
+}
+#result {
+    margin: 10px;
+    background: #eee;
+    padding: 10px;
+    height: 40px;
+    overflow: auto;
+}
+</style>
+<body>
+<h2>Create some JSON object that is nested/structured from a form</h2>
+
+<form id="form">
+	<input id="id" type="hidden" name="id" placeholder="id..." />
+	
+	<BR>
+		Informed Consent Date: <input id="consentDate" type="text" name="consentDate"  value="2-05-1983"/>
+		Subject Number: <input id="subjectNumber" type="text" name="subjectNumber"  value="1234"/>
+	<br><br>
+		<b>Personal Information: </b>
+	<br>
+		Age: <input id="personalInfo-age" type="text" name="personalInfo-age" value="41" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Gender
+		Male:<input type="radio" name="personalInfo-gender" value="Male"/>Female:<input type="radio" name="personalInfo-gender" value="Female"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Occupation: <select name="personalInfo-occupation" id="personalInfo-occupation">
+						<option value="Executive">Executive</option>
+						<option value="Clerk">Clerk</option>
+						<option value="Business">Business</option>
+					</select>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Religion: <select name="personalInfo-religion" id="personalInfo-religion">
+						<option value="Hindu">Hindu</option>
+					</select>
+	<br><br>
+		<b>Family History of Cancer:</b>
+	<br>
+		Does subject have family history of Renal Cell Cancer: 
+		Yes:<input type="radio" name="familyHistory-flag" value="Yes"/>No:<input type="radio" name="familyHistory-flag" value="No"/>
+	<br>
+	<table border="1">
+			<tr>
+				<th>Sr No</th>
+				<th>Relationship</th>
+				<th>Disease</th>
+				<th>Cancer Site</th>
+				<th>Age at onset of disease (in Years)</th>
+				<th>Duration (in Months)</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+				<td><input id="familyHistory-srNo" type="text" name="familyHistory-srNo" value="1" /></td>
+				<td><input id="familyHistory-relationship" type="text" name="familyHistory-relationship" value="Father" /></td>
+				<td><input id="familyHistory-disease" type="text" name="familyHistory-disease" value="Cancer" /></td>
+				<td><input id="familyHistory-cancerSite" type="text" name="familyHistory-cancerSite" value="Site 1" /></td>
+				<td><input id="familyHistory-ageOfDisease" type="text" name="familyHistory-ageOfDisease" value="12" /></td>
+				<td><input id="familyHistory-duration" type="text" name="familyHistory-duration" value="6" /></td>
+				<td><input id="familyHistory-status" type="text" name="familyHistory-status" value="In Progress" /></td>				
+			</tr>
+			<tr>
+				<td><input id="familyHistory-srNo" type="text" name="familyHistory-srNo" value="1" /></td>
+				<td><input id="familyHistory-relationship" type="text" name="familyHistory-relationship" value="Sister" /></td>
+				<td><input id="familyHistory-disease" type="text" name="familyHistory-disease" value="Cancer" /></td>
+				<td><input id="familyHistory-cancerSite" type="text" name="familyHistory-cancerSite" value="Site 1" /></td>
+				<td><input id="familyHistory-ageOfDisease" type="text" name="familyHistory-ageOfDisease" value="12" /></td>
+				<td><input id="familyHistory-duration" type="text" name="familyHistory-duration" value="6" /></td>
+				<td><input id="familyHistory-status" type="text" name="familyHistory-status" value="In Progress" /></td>				
+			</tr>
+			<tr>
+				<td><input id="familyHistory-srNo" type="text" name="familyHistory-srNo" value="1" /></td>
+				<td><input id="familyHistory-relationship" type="text" name="familyHistory-relationship" value="Brother" /></td>
+				<td><input id="familyHistory-disease" type="text" name="familyHistory-disease" value="Cancer" /></td>
+				<td><input id="familyHistory-cancerSite" type="text" name="familyHistory-cancerSite" value="Site 1" /></td>
+				<td><input id="familyHistory-ageOfDisease" type="text" name="familyHistory-ageOfDisease" value="12" /></td>
+				<td><input id="familyHistory-duration" type="text" name="familyHistory-duration" value="6" /></td>
+				<td><input id="familyHistory-status" type="text" name="familyHistory-status" value="In Progress" /></td>				
+			</tr>
+			<tr>
+				<td><input id="familyHistory-srNo" type="text" name="familyHistory-srNo" value="1" /></td>
+				<td><input id="familyHistory-relationship" type="text" name="familyHistory-relationship" value="Mother" /></td>
+				<td><input id="familyHistory-disease" type="text" name="familyHistory-disease" value="Cancer" /></td>
+				<td><input id="familyHistory-cancerSite" type="text" name="familyHistory-cancerSite" value="Site 1" /></td>
+				<td><input id="familyHistory-ageOfDisease" type="text" name="familyHistory-ageOfDisease" value="12" /></td>
+				<td><input id="familyHistory-duration" type="text" name="familyHistory-duration" value="6" /></td>
+				<td><input id="familyHistory-status" type="text" name="familyHistory-status" value="In Progress" /></td>				
+			</tr>
+
+		</table> 
+	<br>
+	<input id="input" type="button" name="submit" value="Post It" onclick="callAjaxServlet()"/>
+	<input id="input" type="button" name="submit" value="load JSON" onclick="loadJSON()"/>
+</form>
+
+<pre id="result">
+</pre>
+
+<script>
+jQuery.support.cors = true;
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
+function callAjaxServlet() 
+{
+	//alert('Test Ajax');
+    $('#result').text(JSON.stringify($('form').serializeObject()));
+	
+	$.ajax({
+			url: 'http://localhost:8180/PatientVisit/AjaxServlet',
+			type: "POST",
+			data: "data="+JSON.stringify($('form').serializeObject()),
+			success: function(data, textStatus, jqXHR) {
+				//alert(data);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				alert(textStatus);
+				alert(errorThrown);
+				alert(jqXHR);
+			}
+	});
+};
+
+function loadJSON () {
+data = {
+			"id":"",
+			"consentDate":"11-11-1978",
+			"subjectNumber":"1234",
+			"personalInfo-age":"41",
+			"personalInfo-gender":"Male",
+			"personalInfo-occupation":"Clerk",
+			"personalInfo-religion":"Hindu"
+}  
+
+
+$('form').loadJSON(data);
+}
+
+</script>
+</html>
