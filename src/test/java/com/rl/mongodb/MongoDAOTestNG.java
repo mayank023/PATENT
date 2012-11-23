@@ -173,6 +173,8 @@ public class MongoDAOTestNG {
 		Gson gson = new Gson();
 		String json = gson.toJson(patientVisitDetails);
 
+		
+		System.out.println("Testing the Github");
 		return json;
 	}
 }
