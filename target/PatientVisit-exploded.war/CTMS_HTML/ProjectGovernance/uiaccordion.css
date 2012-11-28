@@ -1,0 +1,25 @@
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; zoom: 1; margin:5px 0px; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion li {display: inline;}
+.ui-accordion .ui-accordion-header a{ display: block; font-size:12px; padding:5px 10px 5px 30px; color:#333333; text-decoration:none; margin-bottom:0px; font-weight:bold; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left:0px; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding:10px; border-top: 0; margin-top: -7px; position: relative; top: 1px; margin-bottom: 2px;  border:1px solid #CCCCCC; border-top:none; }
+.ui-accordion .ui-accordion-content-active {display: block; margin-bottom:10px;}
+.ui-state-default{ border:1px solid #d3d3d3; background-color:#f2f3f4; font-weight: normal; color: #555555; outline: none;}
+.ui-state-default a { color: #555555/*{fcDefault}*/; text-decoration: none; outline: none;}
+.ui-state-hover{border: 1px solid #999999; background:#e4e4e4; font-weight: normal; color: #212121; outline: none; }
+.ui-state-hover a { color: #212121; text-decoration: none; outline: none;}
+.ui-state-active{ border: 1px solid #aaaaaa; background:#e4e4e4 url(images/down-arrow.png) no-repeat 5px 5px; 
+font-weight: normal; color: #212121; outline: none; }
+.ui-state-active a { color: #212121; outline: none; text-decoration: none; }
+.ui-icon{ width: 16px; height: 16px; background:url(images/next-arrow.png) no-repeat 0px 0px; margin:5px;}
+.ui-state-active .ui-icon { background:#e4e4e4 url(images/down-arrow.png) no-repeat 0px -1px; color:#393838;}
+h3 span{color:#005295; font-size:12px; float:right; margin-top:-21px; margin-right:10px;}
+
+.section {
+    display: block;
+    height: auto!important;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

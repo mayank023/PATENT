@@ -1,0 +1,63 @@
+div.domtab {
+margin:10px; padding:0px; border:1px solid #d1d1d1; overflow:hidden;
+}
+ul.domtabs {
+	float:left;
+	width:258px;
+	margin:0px;
+	padding:0px;
+}
+ul.domtabs li {
+	display:block;
+	padding:0px;
+	list-style:none;
+	/*background:url(../images/laft-menu-a.jpg) no-repeat left top;*/
+/*	width:258px;
+	height:33px;*/
+	font-size:12px; font-style:italic; font-weight:bold;
+}
+ul.domtabs li img{ margin:0px; float:left; padding:0px 10px 0px 0px;
+}
+ul.domtabs a:link,  ul.domtabs a:visited,  ul.domtabs a:active,  ul.domtabs a:hover {
+	width:238px;
+	height:17px;
+	padding:8px 10px;
+	display:block;
+	background:url(../images/laft-menu-a.jpg) no-repeat left top;
+	color:#5e5e5e;
+	font-weight:bold;
+	text-decoration:none;
+	border:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+}
+
+ul.domtabs a:hover {
+background: url(../images/laft-menu-a-hover.jpg) no-repeat left top;
+color:#000000;
+}
+div.domtab div {
+	color: #999999;
+	padding:0px;
+	display:block;
+
+}
+ul.domtabs li.active a:link,  ul.domtabs li.active a:visited,  ul.domtabs li.active a:active,  ul.domtabs li.active a:hover {
+background: url(../images/laft-menu-a-hover.jpg) no-repeat left top;
+	color:#000000;
+}
+#domtabprintview {
+	float:right;
+	padding-right:1em;
+	text-align:right;
+}
+
+h2 {
+	font-size:1.3em;
+	color:#cfc;
+	text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial, Sans-Serif;
+	padding:0px;
+}
+

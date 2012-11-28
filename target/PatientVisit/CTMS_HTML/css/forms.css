@@ -1,0 +1,30 @@
+.search input[type=text]{width:163px; height:20px; margin:0px; padding:0px; float:left; border:1px solid #004d8b; background-color:#FFFFFF;}
+
+
+fieldset{margin:0px 0px 15px 0px; padding:10px; border:1px solid #a3a3a3;}
+legend{margin:0px; padding:0px 10px; color:#5e5e5e; font-weight:bold;}
+
+input[type=text].style-1{width:160px; height:18px; border:1px solid #b5b5b5; background-color:#e4e4e4; margin-left:10px; padding:1px; font-size:11px;}
+input[type=text].style-2{width:120px; height:18px; border:1px solid #b5b5b5; background-color:#e4e4e4; margin-left:10px; padding:1px; font-size:11px;}
+input[type=text].style-3{width:90px; height:18px; border:1px solid #b5b5b5; background-color:#e4e4e4; margin-left:10px; padding:1px; font-size:11px;}
+input[type=text].style-4{width:160px; height:18px; border:1px solid #b5b5b5; background-color:#ffffff; margin-left:10px; padding:1px; font-size:11px;}
+input[type=text].style-5{width:100px; height:18px; border:1px solid #b5b5b5; background-color:#ffffff; margin-left:10px; padding:1px; font-size:11px;}
+input[type=text].style-6{width:200px; height:18px; border:1px solid #b5b5b5; background-color:#ffffff; margin-left:10px; padding:1px; font-size:11px;}
+input[type=text].style-7{width:60px; height:16px; border:1px solid #b5b5b5; background-color:#ffffff;   font-size:11px;}
+input[type=checkbox].style-1{margin-left:10px;}
+
+
+
+textarea.style-1{width:280px; height:50px; margin:0px 0px 5px 10px; padding:5px; border:1px solid #b5b5b5;}
+select.style-1{width:165px; margin:0px 0px 5px 10px; padding:0px; border:1px solid #b5b5b5;}
+
+input[type=button].style-1{ width:143px; height:27px; margin:0px; padding:0px; color:#014277; cursor:pointer; background:url(../images/button-1.jpg) no-repeat left 2px; border:0px;}
+input[type=button].style-1:hover{ width:143px; height:27px; margin:0px; padding:0px; color: #0099FF; cursor:pointer;  border:none;}
+
+
+
+input[type=button].style-3{ width:63px; height:27px; margin:0px; padding:0px; color:#014277; cursor:pointer; background:url(../images/button-2.jpg) no-repeat left 2px; border:0px;}
+input[type=button].style-3:hover{ width:63px; height:27px; margin:0px; padding:0px; color: #0099FF; cursor:pointer;  border:none;}
+
+input[type=button].style-4{width:50px!important; height:16px; border:1px solid #b5b5b5; background-color:#ffffff; margin-right:2px;}
+input[type=button].style-5{width:50px!important; height:16px; border:1px solid #b5b5b5; background-color:#b5b5b5; margin-right:2px;}

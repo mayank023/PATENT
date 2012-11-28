@@ -1,0 +1,12 @@
+
+h5.acc_trigger{padding:0; margin:0;background:#f2f3f4 url(../images/plus.jpg) no-repeat 5px 5px; line-height: 25px;font-size:12px;font-weight: bold;border:1px solid #bdbdbd;
+border-bottom:none; z-index:1000;}
+
+h5.acc_trigger a {color: #5e5e5e;text-decoration: none;display: block;padding: 0 0 0 30px;}
+h5.acc_trigger a:hover {color: #393838;background:#e4e4e4 url(../images/plus.jpg) no-repeat 5px 5px;}
+h5.active{ background:#e4e4e4 url(../images/minus.jpg) no-repeat 5px 5px; color:#393838;}
+.acc_container {margin:0; padding: 0;overflow: hidden;font-size: 1.2em;clear: both;background: #ffffff;border: 1px solid #bdbdbd;}
+.acc_container .block {padding:5px 10px;}
+.border-bottom-none{border-bottom:none;}
+
+.block h3{margin:0px 0px 10px 0px; padding:5px 10px 5px 35px; color:#010101; font-style:italic; font-weight:bold; background:#e4e4e4 url(../images/image-1.jpg) no-repeat 5px 5px; font-size:12px;}

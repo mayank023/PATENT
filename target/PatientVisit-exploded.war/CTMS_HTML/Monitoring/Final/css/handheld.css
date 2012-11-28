@@ -1,0 +1,14 @@
+/* 
+Handheld CSS
+
+Copyright: ©2011 Teehan+Lax. All rights reserved. Please don't re-use without permission.
+------------------------------------------------------------------------------------------------- */
+
+
+* {
+  float: none;
+  background: #fff;
+  color: #000;
+}
+
+body { font-size: 80%; }

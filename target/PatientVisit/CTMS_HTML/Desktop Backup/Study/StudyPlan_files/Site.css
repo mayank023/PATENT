@@ -1,0 +1,186 @@
+body {
+	background: rgb(182, 183, 188); margin: 0px; padding: 0px; color: rgb(105, 105, 105); font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif; font-size: 0.7em;
+}
+.CustomTabStyle .ajax__tab_header {
+	background: url("images/tab-line.gif") repeat-x bottom; font-family: verdana,tahoma,helvetica; font-size: 12px;
+}
+a:link {
+	border: currentColor; color: rgb(3, 74, 243);
+}
+a:visited {
+	border: currentColor; color: rgb(3, 74, 243);
+}
+a:hover {
+	color: rgb(29, 96, 255); text-decoration: none;
+}
+a:active {
+	border: currentColor; color: rgb(3, 74, 243);
+}
+p {
+	line-height: 1.6em; margin-bottom: 10px;
+}
+h1 {
+	color: rgb(102, 102, 102); text-transform: none; font-size: 1.5em; font-variant: small-caps; font-weight: 200; margin-bottom: 0px;
+}
+h2 {
+	color: rgb(102, 102, 102); text-transform: none; font-size: 1.5em; font-variant: small-caps; font-weight: 200; margin-bottom: 0px;
+}
+h3 {
+	color: rgb(102, 102, 102); text-transform: none; font-size: 1.5em; font-variant: small-caps; font-weight: 200; margin-bottom: 0px;
+}
+h4 {
+	color: rgb(102, 102, 102); text-transform: none; font-size: 1.5em; font-variant: small-caps; font-weight: 200; margin-bottom: 0px;
+}
+h5 {
+	color: rgb(102, 102, 102); text-transform: none; font-size: 1.5em; font-variant: small-caps; font-weight: 200; margin-bottom: 0px;
+}
+h6 {
+	color: rgb(102, 102, 102); text-transform: none; font-size: 1.5em; font-variant: small-caps; font-weight: 200; margin-bottom: 0px;
+}
+h1 {
+	padding-bottom: 0px; font-size: 1.6em; margin-bottom: 0px;
+}
+h2 {
+	font-size: 1.5em; font-weight: 600;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1.1em;
+}
+h5 {
+	font-size: 1em;
+}
+h6 {
+	font-size: 1em;
+}
+.rightColumn > h1 {
+	margin-top: 0px;
+}
+.rightColumn > h2 {
+	margin-top: 0px;
+}
+.leftColumn > h1 {
+	margin-top: 0px;
+}
+.leftColumn > h2 {
+	margin-top: 0px;
+}
+.page {
+	margin: 20px auto 0px; border: 1px solid rgb(73, 96, 119); width: 100%; background-color: rgb(255, 255, 255);
+}
+.header {
+	background: rgb(75, 108, 158); margin: 0px; padding: 0px; width: 100%; position: relative;
+}
+.header h1 {
+	margin: 0px; padding: 0px 0px 0px 20px; border: currentColor; color: rgb(249, 249, 249); line-height: 2em; font-size: 2em; font-weight: 700;
+}
+.main {
+	margin: 12px 8px 8px; padding: 0px 12px; min-height: 420px;
+}
+.leftCol {
+	margin: 12px 8px 8px; padding: 6px 0px; width: 200px; min-height: 200px;
+}
+.footer {
+	margin: 0px auto; padding: 8px 0px 0px; text-align: center; color: rgb(78, 87, 102); line-height: normal;
+}
+div.hideSkiplink {
+	width: 100%; background-color: rgb(58, 79, 99);
+}
+div.menu {
+	padding: 4px 0px 4px 8px;
+}
+div.menu ul {
+	list-style: none; margin: 0px; padding: 0px; width: auto;
+}
+div.menu ul li a {
+	padding: 4px 20px; border: 1px solid rgb(78, 102, 125); color: rgb(221, 228, 236); line-height: 1.35em; text-decoration: none; display: block; white-space: nowrap; background-color: rgb(70, 92, 113);
+}
+div.menu ul li a:visited {
+	padding: 4px 20px; border: 1px solid rgb(78, 102, 125); color: rgb(221, 228, 236); line-height: 1.35em; text-decoration: none; display: block; white-space: nowrap; background-color: rgb(70, 92, 113);
+}
+div.menu ul li a:hover {
+	color: rgb(70, 92, 113); text-decoration: none; background-color: rgb(191, 203, 214);
+}
+div.menu ul li a:active {
+	color: rgb(207, 219, 230); text-decoration: none; background-color: rgb(70, 92, 113);
+}
+fieldset {
+	margin: 1em 0px; padding: 1em; border: 1px solid rgb(204, 204, 204);
+}
+fieldset p {
+	margin: 2px 12px 10px 10px;
+}
+fieldset.login label {
+	display: block;
+}
+fieldset.register label {
+	display: block;
+}
+fieldset.changePassword label {
+	display: block;
+}
+fieldset label.inline {
+	display: inline;
+}
+legend {
+	padding: 2px 4px 8px; font-size: 1.1em; font-weight: 600;
+}
+input.textEntry {
+	border: 1px solid rgb(204, 204, 204); width: 320px;
+}
+input.passwordEntry {
+	border: 1px solid rgb(204, 204, 204); width: 320px;
+}
+div.accountInfo {
+	width: 42%;
+}
+.clear {
+	clear: both;
+}
+.title {
+	width: auto; text-align: left; float: left; display: block;
+}
+.loginDisplay {
+	padding: 10px; text-align: right; color: white; font-size: 1.1em; display: block;
+}
+.loginDisplay a:link {
+	color: white;
+}
+.loginDisplay a:visited {
+	color: white;
+}
+.loginDisplay a:hover {
+	color: white;
+}
+.failureNotification {
+	color: red; font-size: 1.2em;
+}
+.bold {
+	font-weight: bold;
+}
+.submitButton {
+	text-align: right; padding-right: 10px;
+}
+.ajax__tab_yuitabview-theme .ajax__tab_header {
+	font-family: arial,helvetica,clean,sans-serif; font-size: small; border-bottom-color: rgb(38, 71, 160); border-bottom-width: 5px; border-bottom-style: solid;
+}
+.ajax__tab_yuitabview-theme .ajax__tab_header .ajax__tab_outer {
+	background: url("img/yui/sprite.png") repeat-x rgb(216, 216, 216); margin: 0px 0.16em 0px 0px; padding: 1px 0px; border-radius: 9px 9px 0px 0px; border: 0px solid rgb(163, 163, 163); vertical-align: bottom; -moz-border-radius: 9px 3px 9px 3px; -webkit-border-radius: 3px; -webkit-border-top-left-radius: 9px; -webkit-border-bottom-right-radius: 9px;
+}
+.ajax__tab_yuitabview-theme .ajax__tab_header .ajax__tab_tab {
+	padding: 0.35em 0.75em; color: rgb(0, 0, 0); margin-right: 0.01em;
+}
+.ajax__tab_yuitabview-theme .ajax__tab_hover .ajax__tab_outer {
+	background: url("img/yui/sprite.png") repeat-x left -1300px rgb(191, 218, 255);
+}
+.ajax__tab_yuitabview-theme .ajax__tab_active .ajax__tab_tab {
+	color: rgb(255, 255, 255);
+}
+.ajax__tab_yuitabview-theme .ajax__tab_active .ajax__tab_outer {
+	background: url("img/yui/sprite.png") repeat-x left -1400px rgb(38, 71, 160);
+}
+.ajax__tab_yuitabview-theme .ajax__tab_body {
+	border-width: 0px 1px 1px; border-style: solid; border-color: rgb(128, 128, 128); padding: 0.25em 0.5em; font-family: verdana,tahoma,helvetica; font-size: 10pt; background-color: rgb(255, 255, 255);
+}

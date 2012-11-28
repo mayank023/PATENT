@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Project Governance</title>
+<link type="text/css" rel="stylesheet" href="css/default.css" />
+
+<!-- this is accordian -->
+<script type="text/javascript" src="js/accordion.js"></script>
+ 
+<script type="text/javascript"> 
+$(document).ready(function(){
+	
+//Set default open/close settings
+$('.acc_container').hide(); //Hide/close all containers
+$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+ 
+//On Click
+$('.acc_trigger').click(function(){
+	if( $(this).next().is(':hidden') ) { //If immediate next container is closed...
+		$('.acc_trigger').removeClass('active').next().slideUp(); //Remove all .acc_trigger classes and slide up the immediate next container
+		$(this).toggleClass('active').next().slideDown(); //Add .acc_trigger class to clicked trigger and slide down the immediate next container
+	}
+	return false; //Prevent the browser jump to the link anchor
+});
+ 
+});
+</script>
+
+</head>
+
+<body>
+    <header>
+        <div id="headmaincontainer">
+            <div class="headsubcontainer">
+                <div class="gridHead1">
+                    <h1>Project Governance</h1>
+                </div>
+                <div style="float: left;font-size: 14px;color: #fff;width: 50px;float: left;margin-top: 20px;">
+                    <a href="../index.html">
+                    <img src="img/home.png" width="40" height="40" alt="Home" />
+                        </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+<div id="container">
+	
+    
+    <!-- Start  Menu Container -->
+    	<div id="menu-container" style="height: 88px !important;">
+    	  <div id="main-menu-container">
+        <div class="menu-left-corner"></div>
+        <div id="main-menu">
+        
+        	<ul>
+            	<li><a href="regular-user.html">Home</a></li>
+                <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+                <li><a href="project-governance.html" >Project Governance</a></li>
+             <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+              <li><a href="data-module.html">Data Module</a></li>
+                
+              <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+               <li><a href="portfolio-scorecard.html"  class="active">Dashboard</a></li>
+              <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+                  <li><a href="masters.html">Admin</a></li>
+                <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+				<li><a href="../logout.html">Logout</a></li>
+                <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+            </ul>
+        </div>
+          <div class="menu-right-corner"></div>
+          </div>
+        <div id="sub-menu">
+        	<ol>
+    	<li class="portfolio-scorecard"><a href="portfolio-scorecard.html" class="active"></a></li>
+        <li class="study-scorecard"><a href="study-scorecard.html" ></a></li>
+         <li class="prm-scorecard"><a href="prm-scorecard.html"></a></li>
+         <li class="qms"><a href="qms-reports.html" ></a></li>
+          <li class="unit-dashboard"><a href="dashboard-unit-dashboard.html"></a></li>
+    </ol>
+       	  </div>
+        </div>
+    <!-- End  Menu Container -->
+    
+    <!-- Start  content -->
+    <div id="content-container">
+    	<div class="title-div">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size:13px;">
+  <tr>
+    <td width="5%" align="left" valign="middle">Show By:</td>
+    <td width="14%" align="left" valign="middle"><select name="select" id="select2" class="style-1">
+          <option>Latest one week period</option>
+      </select>    </td>
+    <td width="10%" align="left" valign="middle">(or) Date Range: from</td>
+    <td width="11%" align="left" valign="middle"><input type="text" /></td>
+    <td width="2%" align="left" valign="middle"><img src="images/cal.jpg" width="15" height="16" border="0" alt="" /></td>
+    <td width="3%" align="left" valign="middle">&nbsp; To</td>
+    <td width="11%" align="left" valign="middle"><input type="text" /></td>
+    <td width="44%" align="left" valign="middle"><img src="images/cal.jpg" width="15" height="16" border="0" alt="" /></td>
+  </tr>
+</table>
+
+        
+        
+      </div>
+        <div id="content">
+ <div id="content-content-bg">
+<div style="width:100%; overflow:auto; height:200px; margin-bottom:10px;">
+<table class="grid_table" width="100%" cellpadding="0" cellspacing="0" style="overflow:auto; width:100%" >
+<tr>
+<th rowspan="2"  align="left" >ID</th>
+<th rowspan="2"  align="left" >PRM Status <img src="images/filter_flag.jpg" alt="filter" border="0" /></th>
+<th rowspan="2"  align="left" >Study ID</th>
+<th rowspan="2"  align="left" >Phase</th>
+<th rowspan="2"  align="left" >IDS COE Location</th>
+<th rowspan="2"  align="left" >Therapeutic Area</th>
+<th rowspan="2"  align="left" >Study Stage</th>
+<th rowspan="2"  align="left" >CDM FTE <br />Allocation<br /> (including DOC)</th>
+<th rowspan="2"  align="left" >CDA FTE<br /> Allocation</th>
+<th rowspan="2"  align="left" >Documentation</th>
+<th  colspan="3"  align="left" >DCT Components </th>
+<th colspan="3"  align="left" >DMT Components </th>
+<th rowspan="2"  align="left" >Cumulative Study Quality<br />Control Results (Listings & Queries)</th>
+<th rowspan="2"  align="left" >Modified Productivity<br /> Expectations for Study?</th>
+<th rowspan="2"  align="left" >Working Days Till<br /> Next Conduct Milestone</th>
+<th rowspan="2"  align="left" >Conduct Backlog (Study Days)</th>
+<th rowspan="2"  align="left" >Coding Backlog (FTE Days)</th>
+</tr>
+<tr>
+  <th  align="left" ><img src="images/indicator_green.png" alt="green" width="17" height="14" /></th>
+  <th  align="left" ><img src="images/indicator_amber.png" alt="amber" width="17" height="14" /></th>
+  <th  align="left" ><img src="images/indicator_red.png" alt="red" width="17" height="14" /></th>
+ <th  align="left" ><img src="images/indicator_green.png" alt="green" width="17" height="14" /></th>
+  <th  align="left" ><img src="images/indicator_amber.png" alt="amber" width="17" height="14" /></th>
+  <th  align="left" ><img src="images/indicator_red.png" alt="red" width="17" height="14" /></th>
+</tr>
+<tr>
+<td align="left">121</td>
+<td align="left"><img src="images/cross.jpg" alt="yes" /></td>
+<td align="left">1275148SCD2001</td>
+<td align="left">Phase II</td>
+<td align="left">Raritan</td>
+<td align="left">Immunology</td>
+<td align="left">Conduct - IDMC</td>
+<td align="left">1</td>
+<td align="left">0.5</td>
+<td align="left">5<img src="images/indicator_red.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.82%</td>
+<td align="left">No</td>
+<td align="left">35</td>
+<td align="left">7.2</td>
+<td align="left">4.0</td>
+</tr>
+<tr>
+<td align="left">213</td>
+<td align="left"><img src="images/cross.jpg" alt="yes" /></td>
+<td align="left">26866138CAN2007</td>
+<td align="left">Phase II</td>
+<td align="left">Beerse</td>
+<td align="left">Oncology</td>
+<td align="left">Conduct </td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1<img src="images/indicator_red.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.84%</td>
+<td align="left">No</td>
+<td align="left">360</td>
+<td align="left">1.4</td>
+<td align="left">0.3</td>
+</tr>
+<tr>
+<td align="left">421</td>
+<td align="left"><img src="images/right.jpg" alt="yes" /></td>
+<td align="left">26866138LYM2033</td>
+<td align="left">Phase II</td>
+<td align="left">Beerse</td>
+<td align="left">Oncology</td>
+<td align="left">Conduct - DBL </td>
+<td align="left">1.1</td>
+<td align="left">0.2</td>
+<td align="left">1<img src="images/indicator_red.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.27%</td>
+<td align="left">No</td>
+<td align="left">161</td>
+<td align="left">1.8</td>
+<td align="left">0.2</td>
+</tr>
+<tr>
+<td align="left">423</td>
+<td align="left"><img src="images/right.jpg" alt="yes" /></td>
+<td align="left">26866138LYM3002</td>
+<td align="left">Phase II</td>
+<td align="left">Beerse</td>
+<td align="left">CNS</td>
+<td align="left">Conduct - iDBL</td>
+<td align="left">6.9</td>
+<td align="left">0.3</td>
+<td align="left">0<img src="images/indicator_green.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.26%</td>
+<td align="left">No</td>
+<td align="left">88</td>
+<td align="left">3.7</td>
+<td align="left">3.2</td>
+</tr>
+<tr>
+<td align="left">652</td>
+<td align="left"><img src="images/cross.jpg" alt="yes" /></td>
+<td align="left">26866138MMY2043E</td>
+<td align="left">Phase I</td>
+<td align="left">Beerse</td>
+<td align="left">CNS</td>
+<td align="left">Conduct - iDBL</td>
+<td align="left">1.1</td>
+<td align="left">0.2</td>
+<td align="left">0<img src="images/indicator_green.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1.65%</td>
+<td align="left">No</td>
+<td align="left">6</td>
+<td align="left">0.3</td>
+<td align="left">0.0 </td>
+</tr>
+<tr>
+<td align="left">132</td>
+<td align="left"><img src="images/cross.jpg" alt="yes" /></td>
+<td align="left">28431754DIA3006</td>
+<td align="left">Phase I</td>
+<td align="left">Raritan</td>
+<td align="left">Neurology</td>
+<td align="left">Conduct - IDMC</td>
+<td align="left">0.5</td>
+<td align="left">0</td>
+<td align="left">3<img src="images/indicator_red.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.00%</td>
+<td align="left">No</td>
+<td align="left">19</td>
+<td align="left">536.9</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">156</td>
+<td align="left"><img src="images/cross.jpg" alt="yes" /></td>
+<td align="left">42160443NPP2002</td>
+<td align="left">Phase III</td>
+<td align="left">Titusville</td>
+<td align="left">Neurology</td>
+<td align="left">Conduct - IDMC</td>
+<td align="left">0.3</td>
+<td align="left">0</td>
+<td align="left">3<img src="images/indicator_red.png" alt="green" /></td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">2.04%</td>
+<td align="left">No</td>
+<td align="left">19</td>
+<td align="left">49.2</td>
+<td align="left">0.2</td>
+</tr>
+</table>
+</div>
+
+ <table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+          
+          
+            <tr>
+              <td align="left" valign="top">
+                
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="35%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="8" align="left" valign="top"><img src="images/top-left-corner-1.jpg" width="8" height="32" /></td>
+      <td align="left" valign="middle" class="top-bg">Summary: Total Portfolio</td>
+      <td width="8" align="left" valign="top"><img src="images/top-right-corner-1.jpg" width="8" height="32" /></td>
+    </tr>
+                  
+                  <tr>
+                    <td align="left" valign="top" class="midle-left-bg">&nbsp;</td>
+      <td align="left" valign="top" class="midle-ng"><img src="images/summary.jpg" width="100%" height="256" /></td>
+      <td align="left" valign="top" class="midle-right-bg">&nbsp;</td>
+    </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/bottom-left-corner-1.jpg" width="8" height="10" /></td>
+      <td align="left" valign="top" class="bottom-bg">&nbsp;</td>
+      <td align="left" valign="top"><img src="images/bottom-right-corner-1.jpg" width="8" height="10" /></td>
+    </tr>
+  </table></td>
+    <td width="2%" align="left" valign="top">&nbsp;</td>
+    <td width="60%" align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="8" align="left" valign="top"><img src="images/top-left-corner-1.jpg" width="8" height="32" /></td>
+      <td align="left" valign="middle" class="top-bg">Trend of Portfolio Record: 289034561320089</td>
+      <td width="8" align="left" valign="top"><img src="images/top-right-corner-1.jpg" width="8" height="32" /></td>
+    </tr>
+                  
+                  <tr>
+                    <td align="left" valign="top" class="midle-left-bg">&nbsp;</td>
+      <td align="left" valign="top" class="midle-ng"><img src="images/trend.jpg" width="100%" height="247" /></td>
+      <td align="left" valign="top" class="midle-right-bg">&nbsp;</td>
+    </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/bottom-left-corner-1.jpg" width="8" height="10" /></td>
+      <td align="left" valign="top" class="bottom-bg">&nbsp;</td>
+      <td align="left" valign="top"><img src="images/bottom-right-corner-1.jpg" width="8" height="10" /></td>
+    </tr>
+  </table>
+    
+    </td>
+  </tr>
+</table>
+
+              </td>
+    </tr>
+            <tr>
+              <td align="left" valign="top">&nbsp;</td>
+    </tr>
+            <tr>
+              <td align="left" valign="top">&nbsp;</td>
+    </tr>
+          </table>
+      </div>
+	  </div>
+      <!--Code for menu ends here-->
+</div>
+
+
+        
+        </div>
+        </section>
+</body>
+</html>

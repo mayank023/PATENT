@@ -1,0 +1,7 @@
+h5.acc_trigger2 {padding: 0; margin:5px;background:#f2f3f4 url(../images/next-arrow.png) no-repeat 5px 5px;line-height: 25px;font-size:12px;font-weight: bold;border:1px solid #bdbdbd;}
+h5.acc_trigger2 a {color: #5e5e5e;text-decoration: none;display: block;padding: 0 0 0 30px;}
+h5.acc_trigger2 a:hover {color: #393838;background:#e4e4e4 url(../images/next-arrow.png) no-repeat 5px 5px;}
+h5.active{ background:#e4e4e4 url(../images/down-arrow.png) no-repeat 5px 5px; color:#393838;}
+.acc_container2 {margin:5px; padding: 0;overflow: hidden;font-size: 1.2em;clear: both;background: #ffffff;border: 1px solid #bdbdbd; }
+.acc_container2 .block {padding:10px;}
+

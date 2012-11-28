@@ -1,0 +1,780 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Project Governance</title>
+<link type="text/css" rel="stylesheet" href="css/default.css" />
+
+<!-- this is accordian -->
+<script type="text/javascript" src="js/accordion.js"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){
+	
+//Set default open/close settings
+$('.acc_container').hide(); //Hide/close all containers
+$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+ 
+//On Click
+$('.acc_trigger').click(function(){
+	if( $(this).next().is(':hidden') ) { //If immediate next container is closed...
+		$('.acc_trigger').removeClass('active').next().slideUp(); //Remove all .acc_trigger classes and slide up the immediate next container
+		$(this).toggleClass('active').next().slideDown(); //Add .acc_trigger class to clicked trigger and slide down the immediate next container
+	}
+	return false; //Prevent the browser jump to the link anchor
+});
+ 
+});
+</script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+	<header>
+        <div id="headmaincontainer">
+            <div class="headsubcontainer">
+                <div class="gridHead1">
+                    <h1>Project Governance</h1>
+                </div>
+                <div style="float: left;font-size: 14px;color: #fff;width: 50px;float: left;margin-top: 20px;">
+                    <a href="../index.html">
+                    <img src="img/home.png" width="40" height="40" alt="Home" />
+                        </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+<div id="container">
+	
+	<!-- End Header -->
+    
+    <!-- Start  Menu Container -->
+    	<div id="menu-container" style="height: 88px !important;">
+        
+        <div id="main-menu-container">
+        <div class="menu-left-corner"></div>
+        <div id="main-menu">
+        
+        	<ul>
+            	<li><a href="regular-user.html">Home</a></li>
+                <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+                <li><a href="project-governance.html"  class="active">Project Governance</a></li>
+             <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+              <li><a href="data-module.html">Data Module</a></li>
+                
+              <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+               <li><a href="portfolio-scorecard.html" >Dashboard</a></li>
+              <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+                  <li><a href="masters.html">Admin</a></li>
+                <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+				<li><a href="../logout.html">Logout</a></li>
+                <li><img src="images/menu-vrline.jpg" width="3" height="27" border="0" alt="" /></li>
+            </ul>
+        </div>
+          <div class="menu-right-corner"></div>
+          </div>
+        <div id="sub-menu">
+       	  <ol>
+    	<li class="create-project"><a href="project-governance.html" class="active"></a></li>
+        <li class="delete-project"><a href="projectlist.html"></a></li>
+    </ol>      	 
+</div>
+        </div>
+    <!-- End  Menu Container -->
+    
+    <!-- Start  content -->
+    <div id="content-container">
+    	<div class="title-div">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="69%" align="left" valign="top"><h1 style="margin: 0px !important;font-size: 15px !important;">Create Project</h1></td>
+    <td width="12%" align="right" valign="top">&nbsp;</td>
+    <td width="17%" align="center" valign="top"><img src="images/progress.jpg" width="205" height="23" border="0" alt="" /></td>
+    <td width="2%" align="left" valign="middle"><strong>95%</strong></td>
+  </tr>
+</table>
+
+        
+        
+        </div>
+        <div id="content">
+          <div id="content-content-bg">
+           <h5 class="acc_trigger active"> <a href="#">General Study Information</a></h5>
+            <div class="acc_container border-bottom-none">
+              <div class="block">
+                <h3>This section gives you the option of Creating / Editing capabilities of the general information of your project like classifications and study data details</h3>
+                <fieldset>
+                <legend>Classification Details</legend>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="19%" height="25" align="right" valign="top">Unit</td>
+                    <td width="22%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                    <td width="31%" align="right" valign="top">Group 1</td>
+                    <td width="28%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                  </tr>
+                  <tr>
+                    <td height="25" align="right" valign="top">Portfolio</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                    <td align="right" valign="top">Group 2</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                  </tr>
+                  <tr>
+                    <td width="19%" height="25" align="right" valign="top">Platform</td>
+                    <td width="22%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                    <td width="31%" align="right" valign="top">Group 3</td>
+                    <td width="28%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                  </tr>
+                  <tr>
+                    <td height="25" align="right" valign="top">Therapeutic Area</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                    <td align="right" valign="top">Priority</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <fieldset>
+                <legend>Study Data Details</legend>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="46%" align="left" valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="3">
+                        <tr>
+                          <td width="43%" height="25" align="right" valign="top">Study Number</td>
+                          <td width="57%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Study Description</td>
+                          <td align="left" valign="top"><textarea name="textarea2" class="style-1"></textarea></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">IDS Location</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Status</td>
+                          <td align="left" valign="top"><input type="text" class="style-1" value="open" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Project Completed?</td>
+                          <td align="left" valign="top"><input type="checkbox" name="checkbox" id="checkbox" class="style-1"  />
+                          </td>
+                        </tr>
+                    </table></td>
+                    <td width="17%"  align="left" valign="top">&nbsp;</td>
+                    <td width="37%"  align="left" valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="3">
+                        <tr>
+                          <td width="25%" height="25" align="right" valign="top">Start Date</td>
+                          <td width="75%" align="left" valign="top"><input type="text" class="style-4" />&nbsp;
+                              <img src="images/cal.jpg" width="15" height="16" style="position:absolute" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">End Date</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;
+                              <img src="images/cal.jpg" width="15" height="16" style="position:absolute"/></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Study Phase</td>
+                          <td align="left" valign="top"><select name="select" class="style-1">
+                              <option>--Select--</option>
+                          </select></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Comments</td>
+                          <td align="left" valign="top"><textarea name="textarea3" class="style-1"></textarea></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <fieldset>
+                <legend>Documentation</legend>
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                  <tr>
+                    <td width="19%" height="25" align="right" valign="top">Attach Document</td>
+                    <td width="81%" height="25" align="left" valign="top"><input type="text" class="style-4" />
+                      &nbsp;
+                      <input type="button" value="Browse" class=" style-3" />
+                      &nbsp;
+                      <input type="button" value="Attach" class=" style-3" /></td>
+                  </tr>
+                  <tr align="right">
+                    <td height="25" colspan="2" align="left" valign="top"><table width="400" border="0" cellpadding="0" cellspacing="0" class="table-2">
+                        <tr>
+                          <td width="154" align="right" valign="top" class="bold">Attached Files :</td>
+                          <td width="142" align="left" valign="top">Final Protocol</td>
+                          <td width="104" align="left" valign="top"><a href="#">Remove</a></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">&nbsp;</td>
+                          <td align="left" valign="top">D R Guidelines</td>
+                          <td align="left" valign="top"><a href="#">Remove</a></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="70%" align="right" valign="top">&nbsp;</td>
+                    <td width="15%" align="right" valign="top">&nbsp;</td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Save and Continue" class="style-1" /></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h5 class="acc_trigger"><a href="#">Resource Details</a></h5>
+            <div class="acc_container border-bottom-none">
+              <div class="block">
+                <h3>This section gives you the option of Creating / Editing capabilities of the resource details of your project</h3>
+                <fieldset>
+                <legend>Project Leadership Team</legend>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="46%" align="left" valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="3">
+                        <tr>
+                          <td width="43%" height="25" align="right" valign="top">Doc Name</td>
+                          <td width="57%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Line Manager</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">TAM</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                    </table></td>
+                    <td width="17%"  align="left" valign="top">&nbsp;</td>
+                    <td width="37%"  align="left" valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="3">
+                        <tr>
+                          <td width="25%" height="25" align="right" valign="top">Lead CDA</td>
+                          <td width="75%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                        <tr>
+                          <td width="25%" height="25" align="right" valign="top">Lead CDM</td>
+                          <td width="75%" align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Lead DML</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" /></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <fieldset>
+                <legend>Resource Needs</legend>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="46%" align="left" valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="3">
+                        <tr>
+                          <td width="43%" height="25" align="right" valign="top">CDM FTE (s)</td>
+                          <td width="57%" align="left" valign="top"><input type="text" class="style-4" />
+                              <img src="images/img-2.jpg" width="16" height="18" style="position:absolute"/></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">DOC FTE</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" />
+                              <img src="images/img-2.jpg" width="16" height="18" style="position:absolute"/></td>
+                        </tr>
+                    </table></td>
+                    <td width="17%"  align="left" valign="top">&nbsp;</td>
+                    <td width="37%"  align="left" valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="3">
+                        <tr>
+                          <td width="25%" height="25" align="right" valign="top">CDA FTE (s)</td>
+                          <td width="75%" align="left" valign="top"><input type="text" class="style-4" />
+                              <img src="images/img-2.jpg" width="16" height="18" style="position:absolute"/></td>
+                        </tr>
+                        <tr>
+                          <td height="25" align="right" valign="top">Coder FTE (s)</td>
+                          <td align="left" valign="top"><input type="text" class="style-4" />
+                              <img src="images/img-2.jpg" width="16" height="18" style="position:absolute"/></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-1">
+                  <tr>
+                    <th width="2%" align="left" valign="top">&nbsp;</th>
+                    <th width="11%" align="left" valign="top">Name</th>
+                    <th width="11%" align="left" valign="top">Role</th>
+                    <th width="11%" align="left" valign="top">Allocated</th>
+                    <th width="56%" align="left" valign="top">Added On</th>
+                    <th width="4%" align="left" valign="top">Edit</th>
+                    <th width="5%" align="left" valign="top">Remove</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><input type="radio" name="radio" id="radio2" value="radio" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                    <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><input type="radio" name="radio" id="radio3" value="radio" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                    <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                    <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                  </tr>
+                </table>
+                <p align="right"; class="link-2"><a href="#"><img src="images/add.gif" width="16" height="16" border="0" alt="Add Resource" />Add Resource</a></p>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="70%" align="right" valign="top">&nbsp;</td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Previous Step" class="style-1" /></td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Save and Continue" class="style-1" /></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h5 class="acc_trigger"><a href="#">Scope</a></h5>
+            <div class="acc_container border-bottom-none">
+              <div class="block">
+                <h3>This section gives you the option of Creating/Editing capabilities of the scope details of your project. It lists out the organisations responsible for developing, building specifications 
+                  and creating, performing the UAT plan.</h3>
+               <fieldset>
+                <legend>Activities</legend><br />
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-1">
+                        <tr>
+                          <th width="10%" align="left" valign="top">Activity</th>
+                          <th width="12%" align="left" valign="top">Develop Specs</th>
+                          <th width="14%" align="left" valign="top">Build Specs</th>
+                          <th width="15%" align="left" valign="top">Create UAT Plan</th>
+                          <th width="15%" align="left" valign="top">Perform UAT Plan</th>
+                          <th width="24%" align="left" valign="top">Remarks</th>
+                          <th width="5%" align="left" valign="top">Edit</th>
+                          <th width="5%" align="left" valign="top">Remove</th>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">CRF</td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-6" /></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">CRF DQR</td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-6" /></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">eDM/CDR</td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-6" /></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">DDS/DQR</td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-6" /></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                        </tr>
+                                                <tr>
+                          <td align="left" valign="top">ECRF (CDR ADLS)</td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-6" /></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                        </tr>
+                                                <tr>
+                          <td align="left" valign="top">ESP (CDR ADLS)</td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-5" /></td>
+                          <td align="left" valign="top"><input type="text" class="style-6" /></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/edit_icon.png" width="16" height="16" border="0" alt="" /></a></td>
+                          <td align="left" valign="top"><a href="#"><img src="images/no.png" width="16" height="16" border="0" alt="" /></a></td>
+                        </tr>
+                      </table>
+                      <p align="right"; class="link-2"><a href="#"><img src="images/add.gif" width="16" height="16" border="0" alt="Add new activity" />Add New Activity</a></p>
+				</fieldset>
+                <fieldset>
+                <legend>Documentation</legend>
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                  <tr>
+                    <td width="19%" height="25" align="right" valign="top">Attach Document</td>
+                    <td width="81%" height="25" align="left" valign="top"><input type="text" class="style-4" />
+                      &nbsp;
+                      <input type="button" value="Browse" class=" style-3" />
+                      &nbsp;
+                      <input type="button" value="Attach" class=" style-3" /></td>
+                  </tr>
+                  <tr align="right">
+                    <td height="25" colspan="2" align="left" valign="top"><table width="400" border="0" cellpadding="0" cellspacing="0" class="table-2">
+                        <tr>
+                          <td width="140" align="right" valign="top" class="bold">Attached Files :</td>
+                          <td width="158" align="left" valign="top">Upto To Date Task list</td>
+                          <td width="104" align="left" valign="top"><a href="#">Remove</a></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">&nbsp;</td>
+                          <td align="left" valign="top">Data Flow Diagram</td>
+                          <td align="left" valign="top"><a href="#">Remove</a></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="70%" align="right" valign="top">&nbsp;</td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Previous Step" class="style-1" /></td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Save and Continue" class="style-1" /></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h5 class="acc_trigger"><a href="#">Milestone</a></h5>
+            <div class="acc_container">
+              <div class="block">
+                <h3>This section gives you the option of setting up the milestone dates for your activities</h3>
+               <div id="TabbedPanels1" class="TabbedPanels">
+                  <ul class="TabbedPanelsTabGroup"  style="margin-left:20px;">
+                    <li class="TabbedPanelsTab" tabindex="0">Milestones</li>
+                    <li class="TabbedPanelsTab" tabindex="0">Planned Activities</li>
+                 </ul>
+                  <div class="TabbedPanelsContentGroup">
+                    <div class="TabbedPanelsContent">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-1">
+                  <tr>
+                    <th width="20%" align="left" valign="top">Particulars</th>
+                    <th width="25%" align="left" valign="top">Planned Start Date</th>
+                    <th width="55%" align="left" valign="top">Planned Completion Date</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">DCT Go Live</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">DMT Go Live</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />                       &nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">FPI Date</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">Conduct</td>
+                    <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr> 
+                    <td align="left" valign="top">LPLV Go-Live</td>
+                      <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                    <td align="left" valign="top">DBL</td>
+                      <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                    <td align="left" valign="top">iDBL</td>
+                      <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                    <td align="left" valign="top">DSMB/iDMC</td>
+                      <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                    <td align="left" valign="top">Post-Production Changes</td>
+                      <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td>
+                     <td align="left" valign="top"><input type="text" class="style-4" />&nbsp;<img src="images/cal.jpg" width="15" height="16" style=" position:absolute" /></td> 
+                  </tr>
+                </table>
+                <p align="right"; class="link-2"><a href="#"><img src="images/add.gif" width="16" height="16" border="0" alt="Add new activity" />Add New Milestone</a></p>
+                </div>
+                    <div class="TabbedPanelsContent">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-1">
+                        <tr>
+                          <th width="13%"  align="left" valign="top">Activity</th>
+                          <th colspan="2" align="left" valign="top">100%  Specs Recieved</th>
+                          <th colspan="2" align="left" valign="top">Build Specs</th>
+                          <th colspan="2" align="left" valign="top">Create UAT Plan</th>
+                          <th colspan="2" align="left" valign="top">Perform UAT Plan</th>
+                        </tr>
+                        <tr bgcolor="#666666" style="color:#FFFFFF;">
+                        <td align="left" valign="top"></td>
+                          <td width="10%" align="left" valign="top" style="color:#FFFFFF;">Start Date</td>
+                          <td width="13%" align="left" valign="top" style="color:#FFFFFF;">End date</td>
+                          <td width="10%" align="left" valign="top" style="color:#FFFFFF;">Start Date</td>
+                          <td width="13%" align="left" valign="top" style="color:#FFFFFF;">End date</td>
+                          <td width="10%" align="left" valign="top" style="color:#FFFFFF;">Start Date</td>
+                          <td width="13%" align="left" valign="top" style="color:#FFFFFF;">End date</td>
+                          <td width="10%" align="left" valign="top" style="color:#FFFFFF;">Start Date</td>
+                          <td width="13%" align="left" valign="top" style="color:#FFFFFF;">End date</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">CRF</td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">CRF DQR</td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>                          
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">eDM/CDR</td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>                          
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">DDS/DQR</td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>                          
+                        </tr>
+                                                <tr>
+                          <td align="left" valign="top">ECRF (CDR ADLS)</td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>                          
+                        </tr>
+                                                <tr>
+                          <td align="left" valign="top">ESP (CDR ADLS)</td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>
+                          <td align="left" valign="top"><input type="button" class="style-4" />
+                    <img src="images/cal.jpg" width="15" height="16" style="position:absolute;" /></td>                         
+                        </tr>
+                      </table>
+                    </div>
+                     </div>
+                </div>
+                <fieldset>
+                <legend>Documentation</legend>
+                  <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                  <tr>
+                    <td width="19%" height="25" align="right" valign="top">Attach Document</td>
+                    <td width="81%" height="25" align="left" valign="top"><input type="text" class="style-4" />
+                      &nbsp;
+                      <input type="button" value="Browse" class=" style-3" />
+                      &nbsp;
+                      <input type="button" value="Attach" class=" style-3" /></td>
+                  </tr>
+                  <tr align="right">
+                    <td height="25" colspan="2" align="left" valign="top"><table width="400" border="0" cellpadding="0" cellspacing="0" class="table-2">
+                        <tr>
+                          <td width="154" align="right" valign="top" class="bold">Attached Files :</td>
+                          <td width="142" align="left" valign="top">UAT Plan</td>
+                          <td width="104" align="left" valign="top"><a href="#">Remove</a></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">&nbsp;</td>
+                          <td align="left" valign="top">UAT Summary</td>
+                          <td align="left" valign="top"><a href="#">Remove</a></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                </fieldset>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="70%" align="right" valign="top">&nbsp;</td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Previous Step" class="style-1" /></td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Save and Continue" class="style-1" /></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h5 class="acc_trigger"><a href="#">Team</a></h5>
+            <div class="acc_container">
+              <div class="block">
+                <h3>This section displays your team and resources.</h3>
+                <fieldset>
+                <legend>Project Leadership Team</legend>
+                  <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="19%" height="25" align="right" valign="top">DOC Name :</td>
+                    <td width="1%" height="25" align="right" valign="top">&nbsp;</td>
+                    <td width="22%" align="left" valign="top">Nibedita Basu</td>
+                    <td width="31%" align="right" valign="top">Lead CDM :</td>
+                    <td width="1%" height="25" align="right" valign="top">&nbsp;</td>
+                    <td width="22%" align="left" valign="top">Mary Nelson</td>
+                  </tr>
+                  <tr>
+                    <td height="25" align="right" valign="top">TAM :</td>
+                    <td width="1%" height="25" align="right" valign="top">&nbsp;</td>
+                    <td width="22%" align="left" valign="top">David Ignatius</td>
+                    <td align="right" valign="top">Lead CDA :</td>
+                    <td width="1%" height="25" align="right" valign="top">&nbsp;</td>
+                    <td width="22%" align="left" valign="top">Swagata Sarkar</td>
+                  </tr>
+                  <tr>
+                    <td height="25" align="right" valign="top">Line Manager :</td>
+                    <td width="1%" height="25" align="right" valign="top">&nbsp;</td>
+                    <td width="22%" align="left" valign="top">Santhosh V</td>
+                    <td align="right" valign="top">Lead DML :</td>
+                    <td width="1%" height="25" align="right" valign="top">&nbsp;</td>
+                    <td width="22%" align="left" valign="top">Melissa Grewal</td>
+                  </tr>
+                </table>
+                </fieldset>
+                <fieldset>
+                <legend>Resource Allocated</legend>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-1">
+                  <tr>
+                    <th align="left" valign="top">Name</th>
+                    <th  align="left" valign="top">Role</th>
+                    <th  align="left" valign="top">Allocation</th>
+                    <th align="left" valign="top">Added On</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">Deepu Joseph</td>
+                    <td align="left" valign="top">CDA(FTE)</td>
+                    <td align="left" valign="top">1</td>
+                    <td align="left" valign="top">15/05/2011</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">Gowri M</td>
+                    <td align="left" valign="top">DOC(FTE)</td>
+                    <td align="left" valign="top">1</td>
+                    <td align="left" valign="top">15/05/2011</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">Brijitha Kiran</td>
+                    <td align="left" valign="top">CDA(FTE)</td>
+                    <td align="left" valign="top">1</td>
+                    <td align="left" valign="top">15/05/2011</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">Vikas Agrawal</td>
+                    <td align="left" valign="top">Coder(FTE)</td>
+                    <td align="left" valign="top">1</td>
+                    <td align="left" valign="top">15/05/2011</td>
+                  </tr>
+                </table>
+
+                </fieldset>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="70%" align="right" valign="top">&nbsp;</td>
+                    <td width="15%" align="right" valign="top"><input type="button" value="Previous Step" class="style-1" /></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div> 
+      <!--Code for menu ends here-->
+</div>
+
+
+        
+        </div>
+    </section>
+<script type="text/javascript">
+<!--
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+//-->
+</script>
+</body>
+</html>

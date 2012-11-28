@@ -1,0 +1,239 @@
+/* -------------------------------------------------------------- 
+   
+   typography.css
+   * Sets up some sensible default typography for Slate.
+   
+-------------------------------------------------------------- */
+
+/* Default font settings */
+#container {
+	font-size: 0.6666666666666667em /* 12/18=12px */;
+	line-height: 1.5em; 
+	}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-family: Arial, Helvetica, sans-serif; font-weight: 400; color: #484848; line-height: 1.5em; margin: 0;}
+h1 a, h2 a, h3 a { text-decoration: none; }
+
+h1 { font-size: 3.75em /* 45px/12px */; line-height: 1em; }
+h2 { font-size: 1.916666666666667em /* 23px/12px */; line-height: 1.391304347826087em /* 32px/23px */; }
+h3 { font-size: 1.583333333333333em /* 19px/12px */; line-height: 1.473684210526316em /* 28px/19px */;}
+h4 { font-size: 1.333333333333333em /* 16px/12px */; line-height: 1.5625em /* 25px/16px */; font-weight: bold; }
+h5 { font-size: 1.166666666666667em /* 14px/12px */; line-height: 1.642857142857143em /* 23px/14px */; font-weight: bold; }
+h6 { font-size: 1em; font-weight: bold;}
+
+h1 img, h2 img, h3 img, 
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p           { margin: 0 0 1.5em; }
+p img.left, img.left	{ float:left; margin:0 1.75em 1.75em 0; }
+p img.right, img.right	{ float:right; margin:0 0 1.75em 1.75em; }
+img.left, img.right		{ background:#fff; padding:5px; border:1px solid #ddd; }
+
+a { 
+	color: #818181;
+	text-decoration: none;
+	}
+a:hover     { color: #559100; }
+
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 18px; font-style: normal; font-size: 1em; color: #818181; }
+del         { color:#666; }
+
+pre 		{ margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em monospace; line-height: 1.5; }
+
+hr {
+  	border: 0!important;
+  	color: #ccc;
+	background-color: #ccc;
+	height: 1px;
+	margin: 18px !important;
+}
+
+
+/*	Blockquotes  */
+blockquote, blockquote p { font-family: Georgia, Times, serif; font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 0 20px 0 19px; border-left: 3px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 0 0 1.5em 2em; padding:0 }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+
+
+/* Misc classes
+-------------------------------------------------------------- */
+
+.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide       { display: none; }
+
+.quiet      { color: #666; }
+.loud       { color: #000; }
+.highlight  { background:#ff0; }
+.added      { background:#060; color: #fff; }
+.removed    { background:#900; color: #fff; }
+
+.first      { margin-left:0; padding-left:0; }
+.last       { margin-right:0; padding-right:0; }
+.top        { margin-top:0; padding-top:0;}
+.bottom     { margin-bottom:0; padding-bottom: 0;}
+.left		{ float:left; }
+.right		{ float:right; }
+
+.icon		{ float:left; margin:0 10px 0 0 !important; }
+
+.button {}
+
+
+
+/* TypeKit Font Replacement 
+-------------------------------------------------------------- */
+
+/* Hide all TypeKit styled fonts until loading complete */
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading h5,
+.wf-loading p,
+.wf-loading li,
+.wf-loading a,
+.wf-loading .largeText,
+.wf-loading .smallText  {
+    visibility: hidden;
+ 	}
+
+/* typekit - Futura 47 Book */
+.wf-active .futura47,
+.wf-active #content .strange-content-block.hero_panel h1,
+.wf-active #sidebar h1,
+.wf-active .pagenotfound h1 {
+	font-size: 3.916666666666667em /* 47px/12px */;
+	font-family: futura-pt-n7,futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	visibility: visible;
+	}
+
+
+/* typekit - Futura 32 Book */
+.wf-active .futura32,
+.wf-active #blog_entry #content h2,
+.wf-active .powerSlide .largeText {
+	font-size: 2.666666666666667em /* 32px/12px */;
+	font-family: futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	}
+
+/* typekit - Futura 25 Book */
+.wf-active .futura25,
+.wf-active #content .strange-content-block.thumbnail_view h2,
+.wf-active #content .strange-content-block.title_only h2,
+.wf-active #content .strange-content-block.summary h2,
+.wf-active #left_sidebar #content h2,
+.wf-active #threecollinklist h2,
+.wf-active #sidebar h2,
+.wf-active #blog_listing .strange-content-block.thumbnail_view h2,
+.wf-active #content h2,
+.wf-active #full .powerSliderShell .powerSliderContainer .powerSlide .extraText  {
+	font-size: 2.083333333333333em /* 25px/12px */;
+	font-family: futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	}
+	
+	/* typekit - Futura 25 Light */
+	.wf-active #sociallinks h2 {	
+		font-size: 2.083333333333333em /* 25px/12px */;
+		font-family: futura-pt, Arial, Helvetica, sans-serif;
+		font-style: normal;
+		font-weight: 200;
+		visibility: visible;
+		}
+
+/* typekit - Futura 21 Book */
+.wf-active .futura21,
+.wf-active #content h3 {
+	font-size: 1.75em /* 21px/12px */;
+	font-family: futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	}
+	
+/* typekit - Futura 18 Book */
+.wf-active .futura18,
+.wf-active footer h4,
+.wf-active #content h4,
+.wf-active header #contact-link p,
+.wf-active #full .powerSliderShell .powerSliderContainer .powerSlide .smallText {	
+	font-size: 1.5em /* 18px/12px */;
+	font-family: futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	}
+	
+/* typekit - Futura 16 Book */
+.wf-active .futura16,
+.wf-active footer #footer-wrap .row.last .col_4.last p,
+.wf-active footer .row.last p,
+.wf-active #content .strange-content-block p.button,
+.wf-active #content .strange-tweets-block li,	
+.wf-active #sidebar ul.nav li,
+.wf-active #content h5,
+.wf-active #content .strange-content-block.hero_panel p,
+.wf-active #content .guestBook-entry .contentByLine span {	
+	font-size: 1.333333333333333em /* 16px/12px */;
+	font-family: futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	}
+
+/* typekit - Futura 14 Book */
+.wf-active .futura14,
+.wf-active #sidebar ul.nav li ul li {
+	font-size: 1.166666666666667em /* 14px/12px */;
+	font-family: futura-pt, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	}
+	
+	.wf-active #sidebar ul.nav li ul li {
+		font-size: 0.8571428571428571em /* 12px/14px */;
+		}

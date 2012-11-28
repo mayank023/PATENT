@@ -1,0 +1,328 @@
+<%@page contentType="text/html"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+<head>
+	<title>Price Analysis</title>
+	<style type="text/css">
+        #dv_tbl {
+
+            width: 300px;
+
+            height: 300px;
+
+        }
+         #dv_tbl2 {
+
+            width: 300px;
+
+            height: 300px;
+
+        }
+
+        table.tbl_1 {
+
+            width: 100%;
+
+            padding: 0px;
+
+            display: table;
+
+            border-collapse: collapse;
+
+        }
+
+        table.tbl_1 th {
+
+            color: #ffffff;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            font-family: 'Segoe UI';
+
+            text-align: center;
+
+            background: none repeat scroll 0 0 #000000;
+
+            border: 1px solid #ffffff;
+
+            vertical-align: middle;
+
+        }
+
+        table.tbl_1 td {
+
+            border: 1px solid #ffffff;
+
+            text-align: center;
+
+            vertical-align: middle;
+
+        }
+
+        .alt_1 {
+
+            background:  none repeat scroll 0 0 #cbcbcb;
+
+        }
+
+        .alt_2 {
+
+            background: none repeat scroll 0 0 #e7e7e7;
+
+        }
+    	</style>
+</head>
+<body>
+<%
+if (hasParameter(request, "sym")) {
+	sym <- getParameter(request, "sym")
+} else {
+	sym <- "MSFT"
+}
+%>
+    <div style="float:left;width:1024px;height:900px;margin:0px auto;">
+        <div style="position:relative;float:left;width:350px;height:900px;">
+            <div style="position:relative;font-family:'Segoe UI';font-size:14px;color:#c3f546;">
+        Top Gainers
+    </div>
+		<div id="dv_tbl">
+            	<table class="tbl_1">
+                <thead>
+                <tr>
+                	<th>
+                   	Symbol
+                	</th>
+                    	<th>
+                   	 % Change
+                    	</th>
+                    
+                    	<th>
+                    	Volume
+                    	</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="alt_1">
+                <td class="td_1">
+                APPL
+                </td>
+                    <td class="td_2">
+                4.8
+                
+                        <img src="img/up_lg.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                    <td class="td_3">
+                512,100
+                </td>
+                </tr>
+                <tr class="alt_2">
+                <td>
+                GOOG
+                </td>
+                <td>
+                3.5
+               
+                        <img src="img/up_lg.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                <td>
+                812,700
+                </td>
+                </tr>
+                <tr class="alt_1">
+                <td class="td_1">
+                FB
+                </td>
+                    <td class="td_2">
+                2.5
+                
+                        <img src="img/up_lg.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                    <td class="td_3">
+                455,020
+                </td>
+                </tr>
+                <tr class="alt_2">
+                <td>
+                AWEB
+                </td>
+                <td>
+                1.6
+                
+                        <img src="img/up_lg.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                <td>
+                312,021
+                </td>
+                </tr>
+                <tr class="alt_1">
+                <td class="td_1">
+                BHRK
+                </td>
+                    <td class="td_2">
+                0.8
+                
+                        <img src="img/up_lg.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                    <td class="td_3">
+                120,511
+                </td>
+                </tr>
+                </tbody>
+           	</table>
+                </div>
+                         <div style="position:relative;font-family:'Segoe UI';font-size:14px;color:#ee4747;">
+        Top Decliners
+    </div>
+		<div id="dv_tbl2">
+            	<table class="tbl_1">
+                <thead>
+                <tr>
+                	<th>
+                   	Symbol
+                	</th>
+                    	<th>
+                   	 % Change
+                    	</th>
+                    
+                    	<th>
+                    	Volume
+                    	</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="alt_1">
+                <td class="td_1">
+                MSFT
+                </td>
+                    <td class="td_2">
+                3.6
+                
+                        <img src="img/down_arrow.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                    <td class="td_3">
+                512,100
+                </td>
+                </tr>
+                <tr class="alt_2">
+                <td>
+                ORCL
+                </td>
+                <td>
+                2.1
+               
+                        <img src="img/down_arrow.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                <td>
+                812,700
+                </td>
+                </tr>
+                <tr class="alt_1">
+                <td class="td_1">
+                SONY
+                </td>
+                    <td class="td_2">
+                1.4
+                
+                        <img src="img/down_arrow.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                    <td class="td_3">
+                455,020
+                </td>
+                </tr>
+                <tr class="alt_2">
+                <td>
+                AADF
+                </td>
+                <td>
+                0.9
+                
+                        <img src="img/down_arrow.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                <td>
+                312,021
+                </td>
+                </tr>
+                <tr class="alt_1">
+                <td class="td_1">
+                CADR
+                </td>
+                    <td class="td_2">
+                0.3
+                
+                        <img src="img/down_arrow.png" alt="Arrow Up" width="12" height="12" />
+                    </td>
+                    <td class="td_3">
+                120,511
+                </td>
+                </tr>
+                </tbody>
+           	</table>
+                </div>
+        </div>
+        <div style="float:left;width:650px;height:900px;">
+            <table border="0" width="100%">
+		<tr height="10px">
+			<td>
+			<fieldset>
+			<form id="frm" method="GET">
+			<div style="position:relative;style="font-family:Arial; font-size:11px;font-weight:bold;font-color:#fff">
+			Symbol Name (e.g "MSFT", "ORCL", "FB"):&nbsp;<input type="text" name="sym" value="<%=paste(sym,collapse="\n")%>" size="35">
+			<select name="subset">
+				<option value="1">Last 6 months</option>
+				<option value="2">Last 3 months</option>
+				<option value="3">Last 1 month</option>
+			</select>
+			<input type="submit" value="Analyze">
+			</div>
+			</form>
+			</fieldset>
+			</td>
+		</tr>
+<%
+	if (hasParameter(request, "sym")) {
+		getSymbols(sym)
+
+		if (hasParameter(request, "subset")) {
+			ss <- getParameter(request, "subset")
+		} else {
+			ss <- "1"
+		}
+
+		
+		
+		path <- system.file("rsp", package="R.rsp")
+		t <- tempfile(pattern = "chart", tmpdir = "/", fileext = ".png")
+		pathname <- sprintf("%s%s",path, t)
+		png(file=pathname, width=750, height=470)
+
+	        
+		if (ss == "1") {
+			chartSeries(get(sym), subset='last 6 months', name=sym) 
+		}
+
+		if (ss == "2") {
+			chartSeries(get(sym), subset='last 3 months', name=sym) 
+		}
+
+		if (ss == "3") {
+			chartSeries(get(sym), subset='last 1 month', name=sym) 
+		}
+
+		dev.off()
+%>
+		<tr>
+			<td><div><img src="<%=paste(t,collapse="\n") %>" /></div></td>
+		</tr>
+<%		
+	}
+%>
+			
+		</table>
+        </div>
+    </div>
+</body>
+</html>
